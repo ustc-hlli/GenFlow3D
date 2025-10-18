@@ -1,0 +1,30 @@
+model_name: GenFlow3d
+exp_name: nuscenes
+
+# general args
+multi_gpu: True
+evaluate: False
+batch_size: 12
+epochs: 240
+learning_rate: 0.001
+weight_decay: 0.0001
+
+optimizer: AdamW
+
+# pretiran
+pretrain: #
+init_epoch: 0
+best_epe: #
+
+# datset
+dataset: NuScenes
+data_root: # your dataset path
+npoint: 8192
+length_pre: 3
+length_fut: 1
+
+# loss
+weight_dist: 1.0
+weight_dif: 1.0
+
+

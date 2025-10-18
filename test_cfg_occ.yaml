@@ -1,0 +1,24 @@
+model_name: GenFlow3d
+exp_name: test_av2
+
+# general args
+multi_gpu: True
+evaluate: True
+resume: True
+batch_size: 1
+
+# pretiran
+pretrain: ./pretrain/GenFlow3d_av2.pth
+
+# datset
+dataset: AV2
+data_root: # your dataset path
+npoint: 8192
+length_pre: 3
+length_fut: 1
+
+# loss
+weight_dist: 1.0
+weight_dif: 1.0
+
+
