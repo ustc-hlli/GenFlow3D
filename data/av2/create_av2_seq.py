@@ -49,7 +49,7 @@ parser.add_argument('--data_root', required=True,
                     help='Path to the argoverse 2 dataset')
 parser.add_argument('--out_root', required=True,
                     help='Output path')
-parser.add_argument('--split_name', required=True,
+parser.add_argument('--split_name', required=True, type=str,
                     help='Split to process (train or val)')
 parser.add_argument('--nframe_bt_samples',
                     help='',
@@ -205,4 +205,5 @@ for log_id, idx_list in indices.items():
     log_idx += 1
     print('%d sequences completed...' % log_idx)
                
+
 print('Completed. Total number of the samples: %d' % count_results['fine'])        
