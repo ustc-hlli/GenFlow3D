@@ -1,7 +1,7 @@
 # GenFlow3D
 **[ICCV 2025] Code for "GenFlow3D: Generative scene flow estimation and prediction on point cloud sequences".**
 **Hanlin Li, Wenming Weng, Yueyi Zhang†, Zhiwei Xiong**
-![Overview of GenFlow3D](https://github.com/ustc-hlli/RPPformer-Flow/blob/main/images/img.jpg)
+![Overview of GenFlow3D](https://github.com/ustc-hlli/GenFlow3D/blob/main/images/overview.png)
 
 ## Preproration
 To run our model, install the PointNet2 library first as follows.
