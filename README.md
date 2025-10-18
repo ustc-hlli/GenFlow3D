@@ -71,3 +71,22 @@ Then run the test code `test_occ.py`:
 ```
 python test_occ.py
 ```
+
+## Training
+To train on nuScenes, set the `data_root` term in the config file `train_cfg.yaml` as your path to the processed nuScenes dataset.
+Then run the training code `train.py`:
+```
+python train.py
+```
+
+To train on Argoverse 2, set the `data_root` term in the config file `train_cfg_occ.yaml` as your path to the processed Argoverse 2 dataset.
+Then run the training code `train_occ.py`:
+```
+python train_occ.py
+```
+
+## Acknowledgement
+Our code is based on [flownet3d_pytorch](https://github.com/hyangwinter/flownet3d_pytorch), [PointPWC-Net](https://github.com/DylanWusee/PointPWC), [Bi-PointFlowNet](https://github.com/cwc1260/BiFlow/tree/new1), [MSBRN](https://github.com/cwc1260/MSBRN) and [DifFlow3D](https://github.com/IRMVLab/DifFlow3D).
+The code to preprocess the nuScenes dataset is based on [SLIM](https://github.com/mercedes-benz/selfsupervised_flow) and the code to preprocess the Argoverse 2 dataset is based on [av2-api](https://github.com/argoverse/av2-api).
+
+The PointNet2 library is from this [repository](https://github.com/sshaoshuai/Pointnet2.PyTorch).
