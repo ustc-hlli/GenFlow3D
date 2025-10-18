@@ -34,7 +34,7 @@ cd ../..
 The processed nuScenes dataset is in `OUTPUT_PATH_NUSCENES`.
 
 ### Argoverse 2
-The code to preprocess the Argoverse 2 dataset is in `./data/av2`. We use the official method from [av2-api](https://github.com/argoverse/av2-api) to generate the scene flow groundtruth.
+The code to preprocess the Argoverse 2 dataset is in `./data/av2`. We use the official method from [av2-api](https://github.com/argoverse/av2-api) to generate the scene flow ground truth.
 
 Download the training parts and validation parts of the Argoverse 2 Sensor Dataset from the [official website](https://www.argoverse.org/av2.html#download-link) and unzip them. The directory structure should be as follows.
 ```
