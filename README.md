@@ -53,5 +53,21 @@ Then run the code file `./data/av2/create_av2_seq.py`：
 cd ./data/av2
 python create_av2_seq.py --data_root your_path_to_av2 --out_root OUTPUT_PATH_AV2 --split_name train
 python create_av2_seq.py --data_root your_path_to_av2 --out_root OUTPUT_PATH_AV2 --split_name val
+cd ../..
 ```
 The processed nuScenes dataset is in `OUTPUT_PATH_AV2`.
+
+## Evaluation
+The pretrianed models are in `.\pretrain`.
+
+To evaluate on nuScenes, first, set the `data_root` term in the config file `test_cfg.yaml` as your path to the processed nuScenes dataset.
+Then run the test code `test.py`:
+```
+python test.py
+```
+
+To evaluate on Argoverse 2, similarly, set the `data_root` term in the config file `test_cfg_occ.yaml` as your path to the processed Argoverse 2 dataset.
+Then run the test code `test_occ.py`:
+```
+python test_occ.py
+```
