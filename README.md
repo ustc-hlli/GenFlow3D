@@ -87,6 +87,7 @@ python train_occ.py
 
 ## Acknowledgement
 Our code is based on [flownet3d_pytorch](https://github.com/hyangwinter/flownet3d_pytorch), [PointPWC-Net](https://github.com/DylanWusee/PointPWC), [Bi-PointFlowNet](https://github.com/cwc1260/BiFlow/tree/new1), [MSBRN](https://github.com/cwc1260/MSBRN) and [DifFlow3D](https://github.com/IRMVLab/DifFlow3D).
+
 The code to preprocess the nuScenes dataset is based on [SLIM](https://github.com/mercedes-benz/selfsupervised_flow) and the code to preprocess the Argoverse 2 dataset is based on [av2-api](https://github.com/argoverse/av2-api).
 
 The PointNet2 library is from this [repository](https://github.com/sshaoshuai/Pointnet2.PyTorch).
