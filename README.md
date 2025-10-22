@@ -59,7 +59,7 @@ cd ../..
 The processed nuScenes dataset is in `OUTPUT_PATH_AV2`.
 
 ## Evaluation
-The pretrianed models are in `.\pretrain`.
+The pretrianed models are in `./pretrain`.
 
 To evaluate on nuScenes, first, set the `data_root` term in the config file `test_cfg.yaml` as your path to the processed nuScenes dataset.
 Then run the test code `test.py`:
